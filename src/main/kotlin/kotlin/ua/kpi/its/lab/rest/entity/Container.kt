@@ -1,4 +1,4 @@
-package com.example.lab2
+import ua.kpi.its.lab.rest.entity.Car
 
 interface Container<T> {
     fun add(car: T)
