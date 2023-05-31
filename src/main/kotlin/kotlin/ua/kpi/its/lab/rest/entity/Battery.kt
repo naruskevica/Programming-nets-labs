@@ -19,7 +19,7 @@ data class Battery(
     val capacity: Int, // Ah
     val chargeTime: Int, //minutes
     val fastCharge: Boolean,
-    @ManyToOne
+    @OneToOne
     @JoinColumn(name = "car_id")
     val car: Car,
 ) : Comparable<Battery> {
